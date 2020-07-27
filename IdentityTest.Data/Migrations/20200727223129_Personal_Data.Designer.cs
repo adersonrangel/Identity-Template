@@ -4,14 +4,16 @@ using IdentityTest.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace IdentityTest.Data.Migrations
 {
     [DbContext(typeof(TestDbContext))]
-    partial class TestDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200727223129_Personal_Data")]
+    partial class Personal_Data
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
