@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Identity_Template.Context;
+using IdentityTest.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -35,8 +35,8 @@ namespace Identity_Template
 
             services.AddDbContext<TestDbContext>
             (opts =>
-                opts.UseSqlServer(Configuration.GetConnectionString("BimmonConnection"),
-                    x => x.MigrationsAssembly("Bimmon.Data"))
+                opts.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
+                    x => x.MigrationsAssembly("IdentityTest.Data"))
             );
 
 
