@@ -14,5 +14,7 @@ namespace IdentityTest.Data.Model
         public DateTime DOB { get; set; }
 
         public string CustomTag { get; set; }
+
+        public bool IsAdmin { get; set; }
     }
 }

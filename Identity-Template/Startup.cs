@@ -45,6 +45,9 @@ namespace Identity_Template
                 .AddEntityFrameworkStores<TestDbContext>()
                 .AddDefaultTokenProviders();
 
+            services.AddScoped<IUserClaimsPrincipalFactory<CustomIdentity>,
+                AdditionalUserClaimsPrincipalFactory>();
+
             #endregion
 
             services.AddControllers();

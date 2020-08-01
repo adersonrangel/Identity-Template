@@ -9,9 +9,14 @@
     <Compile Remove="Migrations\20200727214422_init.Designer.cs" />
     <Compile Remove="Migrations\20200727220017_Identity_User_Custom.cs" />
     <Compile Remove="Migrations\20200727220017_Identity_User_Custom.Designer.cs" />
+    <Compile Remove="Migrations\20200727221707_Init.cs" />
+    <Compile Remove="Migrations\20200727221707_Init.Designer.cs" />
+    <Compile Remove="Migrations\20200727223129_Personal_Data.cs" />
+    <Compile Remove="Migrations\20200727223129_Personal_Data.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="IdentityModel" Version="4.3.1" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.6">

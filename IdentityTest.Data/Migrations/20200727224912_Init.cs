@@ -40,7 +40,10 @@ namespace IdentityTest.Data.Migrations
                     LockoutEnd = table.Column<DateTimeOffset>(nullable: true),
                     LockoutEnabled = table.Column<bool>(nullable: false),
                     AccessFailedCount = table.Column<int>(nullable: false),
-                    CustomTag = table.Column<string>(nullable: true)
+                    Name = table.Column<string>(nullable: true),
+                    DOB = table.Column<DateTime>(nullable: false),
+                    CustomTag = table.Column<string>(nullable: true),
+                    IsAdmin = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
                 {
